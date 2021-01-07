@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="njfdyffinalproject.GradeFXMLController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="601.0">
+         <menus>
+            <Menu fx:id="erasMenu" mnemonicParsing="false" text="Eons">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#switchToEra" text="Go Back to Eons" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Quiz">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#switchToQuiz" text="Take Quiz" />
+                  <MenuItem mnemonicParsing="false" text="Quiz Grades" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#switchToAbout" text="Open" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <AnchorPane prefHeight="368.0" prefWidth="600.0">
+         <children>
+            <Text fx:id="gradeText" layoutX="165.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Score: " textAlignment="CENTER" wrappingWidth="269.2060546875" />
+            <Text fx:id="percentText" layoutX="144.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Percentage:" textAlignment="CENTER" wrappingWidth="310.2060546875" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

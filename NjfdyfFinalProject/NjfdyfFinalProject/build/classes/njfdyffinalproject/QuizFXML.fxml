@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="njfdyffinalproject.QuizFXMLController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="601.0">
+         <menus>
+            <Menu fx:id="erasMenu" mnemonicParsing="false" text="Eons">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Go Back to Eons" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Quiz">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Take Quiz" />
+                  <MenuItem mnemonicParsing="false" onAction="#switchToGrade" text="Quiz Grades" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#switchToAbout" text="About">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Open" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Text fx:id="questionText" strokeType="OUTSIDE" strokeWidth="0.0" text="Question" textAlignment="CENTER" wrappingWidth="477.0341796875" />
+      <VBox fx:id="answerBox" alignment="CENTER" prefHeight="162.0" prefWidth="365.0" />
+      <Text fx:id="finalText" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="365.0" />
+   </children>
+</VBox>

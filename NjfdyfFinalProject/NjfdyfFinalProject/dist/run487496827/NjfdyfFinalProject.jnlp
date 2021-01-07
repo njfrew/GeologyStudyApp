@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="NjfdyfFinalProject.jnlp">
+  <information>
+    <title>NjfdyfFinalProject</title>
+    <vendor>noahfrew</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="NjfdyfFinalProject.jar" size="773359" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="NjfdyfFinalProject" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="njfdyffinalproject.NjfdyfFinalProject"  name="NjfdyfFinalProject" />
+  <update check="always"/>
+</jnlp>
